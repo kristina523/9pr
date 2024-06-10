@@ -1,0 +1,25 @@
+﻿<Window x:Class="_9.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:_9"
+    mc:Ignorable="d"
+    WindowStartupLocation="CenterScreen"
+    Title="Customized Application" Height="600" Width="800">
+    <Grid Background="#EFEFEF">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Background="#333333" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Custom Application" Foreground="White" FontSize="24" Margin="10"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Content="Создать новый Word файл" Background="#337AB7" Foreground="White" Margin="10" Padding="10" Width="200" />
+            <Button Content="Открыть существующий Word файл" Background="#5CB85C" Foreground="White" Margin="10" Padding="10" Width="200" />
+            <Button Content="Создать новый Excel файл" Background="#F0AD4E" Foreground="White" Margin="10" Padding="10" Width="200" />
+            <Button Content="Открыть существующий Excel файл" Background="#f0ad4e" Foreground="White" Margin="10" Padding="10" Width="200" />
+        </StackPanel>
+    </Grid>
+</Window>
